@@ -1,6 +1,6 @@
 # Hallo, ik ben Asmerom 👋
 
-Junior System Administrator in opleiding. Ik heb een volledig IT home lab
+Junior IT System Engineer in opleiding. Ik heb een volledig IT home lab
 gebouwd met 25+ praktische labs over Windows Server, Linux, Netwerk en Security.
 
 ---
