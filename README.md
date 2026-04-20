@@ -1,94 +1,103 @@
 # Hallo, ik ben Asmerom 👋
 
-Ik ben bezig met het opbouwen van mijn ervaring als Junior System engineer.
-Ik leer door te doen — via hands-on labs in een zelfgebouwde VMware omgeving
-bouw ik de vaardigheden op die ik nodig heb in een echte IT-omgeving.
-
----
-
-## Wat ik aan het leren ben
-
-Ik werk momenteel aan mijn IT Home Lab waar ik elke dag nieuwe dingen leer:
-
-- Windows Server beheer en Active Directory
-- Linux server configuratie en beheer
-- Netwerk configuratie en troubleshooting
-- PowerShell scripting en automatisering
-- Infrastructure monitoring met Zabbix
-- IT documentatie en GitHub
-
-Mijn doel is om te groeien naar een Junior System Administrator rol
-waar ik mijn praktische kennis kan inzetten en verder kan ontwikkelen.
+Junior System Administrator in opleiding. Ik heb een volledig IT home lab
+gebouwd met 25+ praktische labs over Windows Server, Linux, Netwerk en Security.
 
 ---
 
 ## Vaardigheden
 
-| Categorie | Technologie |
-|---|---|
-| Server beheer | Windows Server 2025, Active Directory, DNS, DHCP |
-| Virtualisatie | VMware Workstation |
-| Linux | Ubuntu Server 24.04, Apache, SSH |
-| Scripting | PowerShell automatisering |
-| Monitoring | Zabbix 6.4 |
-| Security | Group Policy, NTFS permissions, UFW firewall |
-| Versie beheer | Git, GitHub |
-| Netwerk | NAT, subnetting, DHCP, DNS |
+**Windows Server**
+- Active Directory, DNS, DHCP
+- Group Policy, File Server, Backup
+- Remote Desktop Services
+- Certificate Authority
+- PowerShell automatisering
+
+**Netwerk en Security**
+- pfSense Firewall en VLANs
+- WireGuard VPN
+- Wazuh SIEM
+- File Integrity Monitoring
+- Brute Force detectie
+
+**Linux**
+- Ubuntu Server 24.04
+- Apache, SSH, UFW
+- Zabbix Monitoring
+- RHEL 9
+
+**Tools**
+- VMware Workstation
+- Git en GitHub
+- Chocolatey
+- Zabbix
+- Wazuh
 
 ---
 
-## Mijn IT Home Lab
+## IT Home Lab
 
-Om praktische ervaring op te doen heb ik een volledig IT home lab
-gebouwd in VMware Workstation. Dit simuleert een echte bedrijfsomgeving.
+Volledig virtueel bedrijfsnetwerk gebouwd in VMware Workstation:
 
-**Infrastructuur:**
 ```
-[Windows Server 2025 — DC01]     [Ubuntu Server 24.04]
- Active Directory | DNS | DHCP    Apache | SSH | Zabbix
- File Server | GPO | Backup
-         |                               |
-[Windows 10 Client]            [Windows 11 Client]
- Gejoined aan lab.local         Gejoined aan lab.local
+INTERNET
+    |
+[pfSense Firewall — 192.168.50.1]
+    |
+    +------ DC01 — Windows Server 2025 — 192.168.50.10
+    |        AD DS | DNS | DHCP | File Server | GPO | CA | RDS
+    |
+    +------ DC02 — Windows Server 2025 — 192.168.50.11
+    |        Tweede DC | DHCP Failover | DFS Replicatie
+    |
+    +------ Ubuntu Server — 192.168.50.20
+    |        Apache | SSH | Zabbix Monitoring
+    |
+    +------ RHEL-WAZUH-01 — 192.168.100.50
+    |        Wazuh SIEM | 5 Agents actief
+    |
+    +------ Windows 10 + Windows 11
+             Clients gejoined aan lab.local
 ```
 
-**Labs uitgevoerd:**
+---
 
-| Lab | Wat ik heb gedaan |
+## Labs overzicht
+
+| Categorie | Aantal labs |
 |---|---|
-| Network Lab | VMware NAT netwerk opgezet |
-| Active Directory | Domain Controller, 20 gebruikers, 5 groepen |
-| File Server | 5 mappen met NTFS permissions |
-| Group Policy | Wachtwoordbeleid, bureaubladbeleid, USB blokkeren |
-| Backup & Restore | Windows Server Backup geconfigureerd |
-| Linux Server | Ubuntu met Apache en SSH |
-| Monitoring | Zabbix dashboard voor alle servers |
-| PowerShell | Automatisering scripts geschreven |
-
-**Screenshots als bewijs van elk uitgevoerd lab.**
-
-Bekijk mijn volledige portfolio:
-[IT-Home-Lab Repository](https://github.com/Asmerom-ITLab/IT-Home-Lab)
+| Systeem | 13 labs |
+| Netwerk | 5 labs |
+| Security | 5 labs |
+| Linux | 2 labs |
+| Infra | 3 labs |
+| **Totaal** | **25+ labs** |
 
 ---
 
-## Wat ik zoek
+## Statistieken
 
-Ik ben op zoek naar een stageplek of junior IT functie in Nederland
-waar ik mijn praktische kennis verder kan ontwikkelen en bijdragen
-aan een IT team.
-
-Ik ben gemotiveerd, leergierig en klaar om te groeien.
-
----
-
-## Contact
-
-- LinkedIn: www.linkedin.com/in/asmerom-m-aa6709294
-- Locatie: Nederland
-- GitHub: github.com/Asmerom-ITLab
+- 25+ hands-on labs
+- 195+ screenshots als bewijs
+- 5 PowerShell scripts
+- 2 Domain Controllers met replicatie
+- 5 Wazuh SIEM agents actief
+- 1 WireGuard VPN op alle apparaten
 
 ---
 
-*Elke dag een beetje beter — dat is mijn motto.*
+## Links
 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/asmerom-m-aa6709294)
+[![GitHub Lab](https://img.shields.io/badge/IT_Home_Lab-181717?style=flat&logo=github&logoColor=white)](https://github.com/Asmerom-ITLab/IT-Home-Lab)
+
+---
+
+## Doel
+
+Op zoek naar een **Junior IT System Engineer** positie waar ik mijn
+hands-on kennis van Windows Server, Linux, Netwerk en Security kan
+inzetten en verder kan groeien als IT professional.
+
+*Laatste update: april 2026*
